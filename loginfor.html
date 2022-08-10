@@ -35,23 +35,24 @@
     <section id="login-main">
         <div class="loginbox">
             <h3>
-                <center>Login Here</center>
+                <center>Forgot Password</center>
             </h3>
-            <form method="POST" action="/login">
+            <form method="post" action="/sendotp">
                 <br>
-                <p>Email </p>
-                <input type="text" class="entry" name="Email" placeholder="Enter Email">
+                <!-- <p>Username </p>
+                <input type="text" class="entry" name="username" placeholder="Enter Username">
+                <br> -->
+                <p> Email </p>
+                <input type="text" name="Email" placeholder="Enter your email" id="user-email" required>
                 <br>
-                <p> Password </p>
-                <input type="Password" name="Password" placeholder="Enter Password">
                 <br>
-                <br>
-                <center><input type="submit" class="button" name="" value="submit"><br></center>
+                <center><input type="submit" class="button" name="" value="next"><br>
+                </center>
                 <br>
 
-                <center><a href="/loginfor.html" class="link">Forgot Your Password ?</a><br>
+                <!-- <center><a href="#" class="link">Forgot Your Password ?</a><br>
                     <a href="#" onclick="window.location.href='login_1.html';">Dont Have an account ?</a>
-                </center>
+                </center> -->
             </form>
         </div>
     </section>

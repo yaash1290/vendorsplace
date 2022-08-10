@@ -35,23 +35,28 @@
     <section id="login-main">
         <div class="loginbox">
             <h3>
-                <center>Login Here</center>
+                <center>Forgot Password</center>
             </h3>
-            <form method="POST" action="/login">
+            <form method="POST" action="/verifyotp">
                 <br>
-                <p>Email </p>
-                <input type="text" class="entry" name="Email" placeholder="Enter Email">
-                <br>
-                <p> Password </p>
-                <input type="Password" name="Password" placeholder="Enter Password">
+                <span>an otp has been sent to your email</span>
+                <p> Email </p>
+                <input type="text" name="Email" placeholder="Enter email again">
                 <br>
                 <br>
-                <center><input type="submit" class="button" name="" value="submit"><br></center>
+                <p> OTP </p>
+                <input type="Password" name="Code" placeholder="Enter your OTP">
+                <br>
+                <p>New Password </p>
+                <input type="password" class="entry" name="Password" placeholder="Enter password">
+                <br>
+                <p> Confirm Password </p>
+                <input type="password" name="ConfirmPassword" placeholder="Confirm your password">
+                <br>
+                <br>
+                <center><input type="submit" class="button" name="" value="next"><br></center>
                 <br>
 
-                <center><a href="/loginfor.html" class="link">Forgot Your Password ?</a><br>
-                    <a href="#" onclick="window.location.href='login_1.html';">Dont Have an account ?</a>
-                </center>
             </form>
         </div>
     </section>
