@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmers Place</title>
     <script src="https://kit.fontawesome.com/e046952013.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon"  href="/img/favicon.ico">
+    <script src="index.js"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -37,13 +40,13 @@
             <h3>
                 <center>Forgot Password</center>
             </h3>
-            <form method="POST" action="/verifyotp">
+            <form class="okayy" method="POST" action="/verifyotp" >
                 <br>
-                <span>an otp has been sent to your email</span>
+                <span> an otp has been sent to your email</span>
                 <p> Email </p>
                 <input type="text" name="Email" placeholder="Enter email again">
                 <br>
-                <br>
+                
                 <p> OTP </p>
                 <input type="Password" name="Code" placeholder="Enter your OTP">
                 <br>
@@ -52,7 +55,7 @@
                 <br>
                 <p> Confirm Password </p>
                 <input type="password" name="ConfirmPassword" placeholder="Confirm your password">
-                <br>
+                
                 <br>
                 <center><input type="submit" class="button" name="" value="next"><br></center>
                 <br>

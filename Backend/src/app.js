@@ -167,13 +167,13 @@ const mailer = (email, otp) => {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: '------@gmail.com',
-            pass: '--------',
+            user: 'farmerplace4@gmail.com',
+            pass: 'hkxuunbmrnxdjylw',
         }
     });
 
     var mailOptions = {
-        from: 'virajj014@gmail.com',
+        from: 'naitiksharma534@gmail.com',
         to: email,
         subject: 'Farmers Place: ' + otp + ' is your verification code for secure registration',
         html: '<h4>Hi User</h4> <h4>Greetings!</h4> <h4>You are just a step away to chnage your password successfully.</h4>'
@@ -188,6 +188,7 @@ const mailer = (email, otp) => {
         if (err) {
             console.log(err);
         } else {
+            
             console.log('Email sent: ' + info.response);
         }
     });
