@@ -8,7 +8,7 @@ const FarmerSchema = new mongoose.Schema({
     Email: {
         type: String,
         required: true,
-        unique: true
+        unique: true,
     },
     Password: {
         type: String,
@@ -22,7 +22,7 @@ const FarmerSchema = new mongoose.Schema({
     PhoneNumber: {
         type: Number,
         required: true,
-        unique: true
+        unique: true,
     },
     Address: {
         type: String,
@@ -35,17 +35,17 @@ const FarmerSchema = new mongoose.Schema({
     AdhaarNumber: {
         type: Number,
         required: true,
-        unique: true
+        unique: true,
     },
     PinCode: {
         type: Number,
-        required: true
-    },
-    KhasraNumber: {
-        type: Number,
         required: true,
-        unique: true
-    }
+    },
+    Category: {
+        type: String,
+        required: true,
+        
+    },
 
 })
 
@@ -54,3 +54,5 @@ const FarmerSchema = new mongoose.Schema({
 const RegisterFarmer = new mongoose.model("RegisterFarmer", FarmerSchema);
 
 module.exports = RegisterFarmer;
+
+

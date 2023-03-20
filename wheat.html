@@ -15,7 +15,7 @@
 
 <body>
     <section id="header">
-        <a id="logo" href="#"><img src="img/logo/logo.png" class="logo" alt=""></a>
+        <a id="logo" href="#"><img src="img/logo/final_logo.png" class="logo" alt=""></a>
 
         <div>
             <ul id="navbar">
@@ -24,7 +24,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="cart" id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
@@ -47,62 +47,86 @@
         
         <p>The Best Quality Product in the Market</p>
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='w1.html';">
-                <img src="img/products/wheat/lokman1 (1).png" alt="">
+            <div class="pro">
+                <img src="img/products/wheat/lokman1 (1).png" alt="Lokman">
+                <a class="add-cart cart1" href="#">add to cart</a>
                 <div class="des">
                     <h5>Lokman</h5>
+                    <h5>Rs 19</h5> 
                 </div>
                 <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+                <a href="/contact-form-16/index.html"><i class="fa-solid fa-message fa-cart-shopping cart"></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='w2.html';">
+            <div class="pro">
                 <img src="img/products/wheat/sharbati2.png" alt="">
+                <a class="add-cart cart2" href="#">add to cart</a>
                 <div class="des">
                     <h5>Sarwati</h5>
+                    <h5>Rs 25</h5>
                 </div>
                 <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+                <a href="/contact-form-16/index.html"><i class="fa-solid fa-message fa-cart-shopping cart"></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='w3.html';">
+            <div class="pro">
                 <img src="img/products/wheat/sujata2.png" alt="">
+                <a class="add-cart cart3" href="#">add to cart</a>
                 <div class="des">
                     <h5>Sujata</h5>
+                    <h5>Rs 23</h5>
                 </div>
                 <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+                <a href="/contact-form-16/index.html"><i class="fa-solid fa-message fa-cart-shopping cart"></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='w4.html';">
+            <div class="pro">
                 <img src="img/products/wheat/blackwheat3.png" alt="">
+                <a class="add-cart cart4" href="#">add to cart</a>
                 <div class="des">
                     <h5>Black Wheat</h5>
+                    <h5>Rs 30</h5>
                 </div>
                 <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+                <a href="/contact-form-16/index.html"><i class="fa-solid fa-message fa-cart-shopping cart"></i></a>
             </div>
             
-            <div class="pro" onclick="window.location.href='w5.html';">
+            <div class="pro">
                 <img src="img/products/wheat/redwheat4.png" alt="">
+                <a class="add-cart cart5" href="#">add to cart</a>
                 <div class="des">
                     <h5>Red Wheat</h5>
+                    <h5>Rs 22</h5>
                 </div>
                 <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+                <a href="/contact-form-16/index.html"><i class="fa-solid fa-message fa-cart-shopping cart"></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='w6.html';">
+            <div class="pro">
                 <img src="img/products/wheat/318-4.png" alt="">
+                <a class="add-cart cart6" href="#">add to cart</a>
                 <div class="des">
                     <h5>318</h5>
+                    <h5>Rs 23</h5>
                 </div>
                 <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+                <a href="/contact-form-16/index.html"><i class="fa-solid fa-message fa-cart-shopping cart"></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='w7.html';">
+            <div class="pro">
                 <img src="img/products/wheat/pusa2.png" alt="">
+                <a class="add-cart cart7" href="#">add to cart</a>
                 <div class="des">
                     <h5>Pusa</h5>
+                    <h5>Rs 18</h5>
                 </div>
                 <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+                <a href="/contact-form-16/index.html"><i class="fa-solid fa-message fa-cart-shopping cart"></i></a>
             </div>
-            <div class="pro" onclick="window.location.href='w8.html';">
+            <div class="pro">
                 <img src="img/products/wheat/tejas1.png" alt="">
+                <a class="add-cart cart8" href="#">add to cart</a>
                 <div class="des">
                     <h5>Tejas</h5>
+                    <h5>Rs 31</h5>
                 </div>
                 <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+                <a href="/contact-form-16/index.html"><i class="fa-solid fa-message fa-cart-shopping cart"></i></a>
             </div>
             
         </div>    
@@ -131,7 +155,7 @@
 
     <footer class="section-p1">
         <div class="col">
-            <img class="logo" src="img/logo/logo.png" alt="">
+            <img class="logo" src="img/logo/final_logo.png" alt="">
             <h4>Contact</h4>
             <p><strong>Address: </strong> Gyan Ganga Institute of Technology & Science</p>
             <p><strong>Phone No.: </strong> +91-7909335330</p>
@@ -180,6 +204,7 @@
 
 
     <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

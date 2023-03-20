@@ -15,17 +15,23 @@
 </head>
 
 <body>
-    <section id="header">
-        <a id="logo" href="#"><img src="img/logo/logo.png" class="logo" alt=""></a>
 
+
+    <div id="google_element" align="center"></div>
+
+    
+    <section id="header">
+        <a id="logo" href="#"><img src="img/logo/final_logo.png" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="/contact-form-16/index.html">Feedback</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="cart" id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
@@ -43,28 +49,19 @@
     </section>
 
     <section id="cart" class="section-p1">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remove</td>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f1.jpg" alt=""></td>
-                    <td>Wheat</td>
-                    <td>x price</td>
-                    <td><input type="number" value="1"></td>
-                    <td>x price</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="products-container">
+            <div class="product-header">
+                <h5 class="products-title">PRODUCT</h5>
+                <h5 class="price">PRICE</h5>
+                <h5 class="quantity">QUANTITY</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <div class="products">
+                
+            </div>
+            
+        </div>
+        
     </section>
 
     <!-- Call to action banners -->
@@ -75,7 +72,7 @@
 
     <footer class="section-p1">
         <div class="col">
-            <img class="logo" src="img/logo/logo.png" alt="">
+            <img class="logo" src="img/logo/final_logo.png" alt="">lt="">
             <h4>Contact</h4>
             <p><strong>Address: </strong> Gyan Ganga Institute of Technology & Science</p>
             <p><strong>Phone No.: </strong> +91-7909335330</p>
@@ -124,6 +121,9 @@
 
 
     <script src="script.js"></script>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

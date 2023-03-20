@@ -10,6 +10,8 @@ const otpModel = require('./models/otpModel');
 require("./db/conn")
 const RegisterCustomer = require("./models/registerCustomer");
 const RegisterFarmer = require("./models/registerFarmer");
+const RegisterCustomerdata = require('./models/registerCustomerdata');
+const Product = require('./models/product');
 
 const static_path = path.join(__dirname, '../../');
 app.use(express.static(static_path))
@@ -40,6 +42,46 @@ app.post("/registerCustomer", async (req, res) => {
         res.status(400).send(err)
     }
 })
+app.post("/registerCustomerdata", async (req, res) => {
+    console.log(req.body);
+    try {
+        const prod = new RegisterCustomerdata(req.body);
+
+        await prod.save().then(() => {
+            res.sendFile('/index.html', { root: static_path });
+        }).catch((err) => {
+            console.log(err)
+            res.status(400).send(err)
+        })
+
+    }
+    catch (err) {
+        res.status(400).send(err)
+    }
+})
+
+app.post("/product", async (req, res) => {
+    console.log(req.body);
+    try {
+        const customer = new Product(req.body);
+
+        await customer.save().then(() => {
+            res.sendFile('/page.html', { root: static_path });
+        }).catch((err) => {
+            console.log(err)
+            res.status(400).send(err)
+        })
+
+    }
+    catch (err) {
+        res.status(400).send(err)
+    }
+})
+
+
+
+
+
 app.post("/registerFarmer", async (req, res) => {
     try {
         const farmer = new RegisterFarmer(req.body);
@@ -50,7 +92,7 @@ app.post("/registerFarmer", async (req, res) => {
         }
         else {
             await farmer.save().then(() => {
-                res.sendFile('login.html', { root: static_path });
+                res.sendFile('/additems.html', { root: static_path });
             }).catch((err) => {
                 console.log(err)
                 res.status(400).send(err)
@@ -188,7 +230,6 @@ const mailer = (email, otp) => {
         if (err) {
             console.log(err);
         } else {
-            
             console.log('Email sent: ' + info.response);
         }
     });
